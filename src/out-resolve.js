@@ -6,7 +6,7 @@ export default (input, output) => new Promise(resolve => {
   }
 
   if (output) {
-    return resolve(path.join(output, path.basename(input)));
+    return resolve(path.join(output, input.split('/').slice(1).join('/')));
   }
 
   resolve(input);
