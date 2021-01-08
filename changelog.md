@@ -1,7 +1,197 @@
+## <small>0.9.1 (2020-11-27)</small>
+
+* build: update dep dev ([c542315](https://github.com/posthtml/posthtml-cli/commit/c542315))
+* perf: skip files by pattern ([0bb92bc](https://github.com/posthtml/posthtml-cli/commit/0bb92bc))
+* test: skip by pattern ([1dac470](https://github.com/posthtml/posthtml-cli/commit/1dac470))
+* docs: add open collective ([70902c0](https://github.com/posthtml/posthtml-cli/commit/70902c0))
+* docs: fix typo ([1b89474](https://github.com/posthtml/posthtml-cli/commit/1b89474))
+
+
+
+## 0.9.0 (2020-11-24)
+
+* 0.9.0 ([59bffb6](https://github.com/posthtml/posthtml-cli/commit/59bffb6))
+* build: update dep dev ([41f89ec](https://github.com/posthtml/posthtml-cli/commit/41f89ec))
+* docs: description for skip parse, #332 ([3cb4612](https://github.com/posthtml/posthtml-cli/commit/3cb4612)), closes [#332](https://github.com/posthtml/posthtml-cli/issues/332)
+* feat: skip parse option, close #332 ([a77c7a1](https://github.com/posthtml/posthtml-cli/commit/a77c7a1)), closes [#332](https://github.com/posthtml/posthtml-cli/issues/332)
+* test: for skip options, issue #332 ([a1188b2](https://github.com/posthtml/posthtml-cli/commit/a1188b2)), closes [#332](https://github.com/posthtml/posthtml-cli/issues/332)
+
+
+
+## <small>0.8.1 (2020-11-17)</small>
+
+* 0.8.1 ([f103051](https://github.com/posthtml/posthtml-cli/commit/f103051))
+* build: lock ([1b8dffc](https://github.com/posthtml/posthtml-cli/commit/1b8dffc))
+* build: update changelog ([597ab5c](https://github.com/posthtml/posthtml-cli/commit/597ab5c))
+* fix: allInOutput config in JSON is ignored, close #330 ([236c902](https://github.com/posthtml/posthtml-cli/commit/236c902)), closes [#330](https://github.com/posthtml/posthtml-cli/issues/330)
+* test: allInOutput config in JSON is ignored, issue #330 ([11d9fb7](https://github.com/posthtml/posthtml-cli/commit/11d9fb7)), closes [#330](https://github.com/posthtml/posthtml-cli/issues/330)
+
+
+
+## 0.8.0 (2020-10-13)
+
+* 0.8.0 ([d07f45b](https://github.com/posthtml/posthtml-cli/commit/d07f45b))
+* build: update changelog ([3eded7c](https://github.com/posthtml/posthtml-cli/commit/3eded7c))
+* build: update dep dev ([a5634aa](https://github.com/posthtml/posthtml-cli/commit/a5634aa))
+* feat: update notifier, close #296 ([ec1305a](https://github.com/posthtml/posthtml-cli/commit/ec1305a)), closes [#296](https://github.com/posthtml/posthtml-cli/issues/296)
+
+
+
+## <small>0.7.7 (2020-10-12)</small>
+
+* 0.7.7 ([a5c47c1](https://github.com/posthtml/posthtml-cli/commit/a5c47c1))
+* build: update changelog ([09e523e](https://github.com/posthtml/posthtml-cli/commit/09e523e))
+* test: incorrect resolve with root, issue #326 ([c4014d3](https://github.com/posthtml/posthtml-cli/commit/c4014d3)), closes [#326](https://github.com/posthtml/posthtml-cli/issues/326)
+* test: normalize expected path ([55b7845](https://github.com/posthtml/posthtml-cli/commit/55b7845))
+* docs: fix example with root ([8a86282](https://github.com/posthtml/posthtml-cli/commit/8a86282))
+* fix: resolve path with root, close #326 ([45a42ee](https://github.com/posthtml/posthtml-cli/commit/45a42ee)), closes [#326](https://github.com/posthtml/posthtml-cli/issues/326)
+
+
+
+## <small>0.7.6 (2020-09-22)</small>
+
+* 0.7.6 ([0cc6ffe](https://github.com/posthtml/posthtml-cli/commit/0cc6ffe))
+* build: update changelog ([85c8caf](https://github.com/posthtml/posthtml-cli/commit/85c8caf))
+* build: update dep dev, close #312 ([0807b07](https://github.com/posthtml/posthtml-cli/commit/0807b07)), closes [#312](https://github.com/posthtml/posthtml-cli/issues/312)
+* test: fix for window os ([f657858](https://github.com/posthtml/posthtml-cli/commit/f657858))
+* ci: enable window test, close #316 ([c86172d](https://github.com/posthtml/posthtml-cli/commit/c86172d)), closes [#316](https://github.com/posthtml/posthtml-cli/issues/316)
+* ci: update config ([a4516bc](https://github.com/posthtml/posthtml-cli/commit/a4516bc))
+* fix: resolve path on window, close #323 ([2447d87](https://github.com/posthtml/posthtml-cli/commit/2447d87)), closes [#323](https://github.com/posthtml/posthtml-cli/issues/323)
+* docs: fix typo ([27c8748](https://github.com/posthtml/posthtml-cli/commit/27c8748))
+
+
+
+## <small>0.7.5 (2020-08-19)</small>
+
+* 0.7.5 ([595e05a](https://github.com/posthtml/posthtml-cli/commit/595e05a))
+* build: update changelog ([7c203eb](https://github.com/posthtml/posthtml-cli/commit/7c203eb))
+* docs: about escaping when use pattern ([ae3db76](https://github.com/posthtml/posthtml-cli/commit/ae3db76))
+* fix: incorrect resolve ignoring folder/files, close #317 ([8cc3e69](https://github.com/posthtml/posthtml-cli/commit/8cc3e69)), closes [#317](https://github.com/posthtml/posthtml-cli/issues/317)
+* test: ignoring folder/files, issue #317 ([7a4e8dc](https://github.com/posthtml/posthtml-cli/commit/7a4e8dc)), closes [#317](https://github.com/posthtml/posthtml-cli/issues/317)
+
+
+
+## <small>0.7.4 (2020-08-19)</small>
+
+* 0.7.4 ([158e2cc](https://github.com/posthtml/posthtml-cli/commit/158e2cc))
+* Fix order for plugin set with config and cli ([bb3973a](https://github.com/posthtml/posthtml-cli/commit/bb3973a))
+* build: perf runner test script ([40237d0](https://github.com/posthtml/posthtml-cli/commit/40237d0))
+* build: update changelog ([c187bc0](https://github.com/posthtml/posthtml-cli/commit/c187bc0))
+
+
+
+## <small>0.7.3 (2020-08-18)</small>
+
+* 0.7.3 ([e6ab03f](https://github.com/posthtml/posthtml-cli/commit/e6ab03f))
+* build: up node targets for preset env ([3a01485](https://github.com/posthtml/posthtml-cli/commit/3a01485))
+* build: update changelog ([b3d0bce](https://github.com/posthtml/posthtml-cli/commit/b3d0bce))
+* perf: default for base config ([8d93107](https://github.com/posthtml/posthtml-cli/commit/8d93107))
+* perf: tree options from for plugins, #303 ([981e911](https://github.com/posthtml/posthtml-cli/commit/981e911)), closes [#303](https://github.com/posthtml/posthtml-cli/issues/303)
+* test: async/await not needed ([3165971](https://github.com/posthtml/posthtml-cli/commit/3165971))
+* test: default for base config ([7a96127](https://github.com/posthtml/posthtml-cli/commit/7a96127))
+* test: fix input file param, issue #308,#313 ([d76f655](https://github.com/posthtml/posthtml-cli/commit/d76f655)), closes [#308](https://github.com/posthtml/posthtml-cli/issues/308) [#313](https://github.com/posthtml/posthtml-cli/issues/313)
+* test: fix not remove expected files/folders ([f744687](https://github.com/posthtml/posthtml-cli/commit/f744687))
+* test: fix one/two io ([e72206a](https://github.com/posthtml/posthtml-cli/commit/e72206a))
+* test: if input not found ([4360836](https://github.com/posthtml/posthtml-cli/commit/4360836))
+* test: input from config, issue #308,#313 ([c8f9a54](https://github.com/posthtml/posthtml-cli/commit/c8f9a54)), closes [#308](https://github.com/posthtml/posthtml-cli/issues/308) [#313](https://github.com/posthtml/posthtml-cli/issues/313)
+* test: output resolve from config, issue #308 ([c13d78b](https://github.com/posthtml/posthtml-cli/commit/c13d78b)), closes [#308](https://github.com/posthtml/posthtml-cli/issues/308)
+* test: resolve output when CLI priority ([4ad0c33](https://github.com/posthtml/posthtml-cli/commit/4ad0c33))
+* fix: input map is not defined ([144a101](https://github.com/posthtml/posthtml-cli/commit/144a101))
+* fix: resolve incommitg input, close #313 ([4540719](https://github.com/posthtml/posthtml-cli/commit/4540719)), closes [#313](https://github.com/posthtml/posthtml-cli/issues/313)
+* fix: resolve or error inputs file, close #313 ([0b53fa2](https://github.com/posthtml/posthtml-cli/commit/0b53fa2)), closes [#313](https://github.com/posthtml/posthtml-cli/issues/313)
+* fix: resolve output from config, close #308 ([8588060](https://github.com/posthtml/posthtml-cli/commit/8588060)), closes [#308](https://github.com/posthtml/posthtml-cli/issues/308)
+
+
+
+## <small>0.7.2 (2020-08-17)</small>
+
+* 0.7.2 ([81b6217](https://github.com/posthtml/posthtml-cli/commit/81b6217))
+* build: commit lint incorrect work on v9.1.2, #312 ([255ceb1](https://github.com/posthtml/posthtml-cli/commit/255ceb1)), closes [#312](https://github.com/posthtml/posthtml-cli/issues/312)
+* build: update changelog ([83181f7](https://github.com/posthtml/posthtml-cli/commit/83181f7))
+* build: update dep dev ([44a79b3](https://github.com/posthtml/posthtml-cli/commit/44a79b3))
+* ci: skip test on window, #308 ([850c93a](https://github.com/posthtml/posthtml-cli/commit/850c93a)), closes [#308](https://github.com/posthtml/posthtml-cli/issues/308)
+* docs: describe list input file to folder ([e6d06a0](https://github.com/posthtml/posthtml-cli/commit/e6d06a0))
+* docs: describe posthtml options and root param, close #310 ([f77f469](https://github.com/posthtml/posthtml-cli/commit/f77f469)), closes [#310](https://github.com/posthtml/posthtml-cli/issues/310)
+* fix: resolve input from root, close #303 ([5ec996f](https://github.com/posthtml/posthtml-cli/commit/5ec996f)), closes [#303](https://github.com/posthtml/posthtml-cli/issues/303)
+
+
+
+## <small>0.7.1 (2020-08-13)</small>
+
+* 0.7.1 ([0813824](https://github.com/posthtml/posthtml-cli/commit/0813824))
+* build: update changelog ([10fa016](https://github.com/posthtml/posthtml-cli/commit/10fa016))
+* build: update dep dev ([dc8b828](https://github.com/posthtml/posthtml-cli/commit/dc8b828))
+* fix: options for procees from config, close #306 ([f4d3eed](https://github.com/posthtml/posthtml-cli/commit/f4d3eed)), closes [#306](https://github.com/posthtml/posthtml-cli/issues/306)
+* test: for options in config, issue #306 ([a0e093a](https://github.com/posthtml/posthtml-cli/commit/a0e093a)), closes [#306](https://github.com/posthtml/posthtml-cli/issues/306)
+* test: for resolve options in config ([80b70ff](https://github.com/posthtml/posthtml-cli/commit/80b70ff))
+* perf: resolve options in config ([dbbbee8](https://github.com/posthtml/posthtml-cli/commit/dbbbee8))
+
+
+
+## 0.7.0 (2020-08-10)
+
+* 0.7.0 ([2b605dc](https://github.com/posthtml/posthtml-cli/commit/2b605dc))
+* build: update changelog ([77b8cb5](https://github.com/posthtml/posthtml-cli/commit/77b8cb5))
+* build: update dep dev ([129e717](https://github.com/posthtml/posthtml-cli/commit/129e717))
+* fix: after change use priority ([5b41e62](https://github.com/posthtml/posthtml-cli/commit/5b41e62))
+* fix: override config file options via CLI args, close #304 ([e1f1334](https://github.com/posthtml/posthtml-cli/commit/e1f1334)), closes [#304](https://github.com/posthtml/posthtml-cli/issues/304)
+* fix: priority use higher than config ([e41d220](https://github.com/posthtml/posthtml-cli/commit/e41d220))
+* fix: test for issue #304 ([51f9190](https://github.com/posthtml/posthtml-cli/commit/51f9190)), closes [#304](https://github.com/posthtml/posthtml-cli/issues/304)
+* test: override config file options via CLI args, issue #304 ([c6f50d5](https://github.com/posthtml/posthtml-cli/commit/c6f50d5)), closes [#304](https://github.com/posthtml/posthtml-cli/issues/304)
+* perf: off no reduce ([9815f80](https://github.com/posthtml/posthtml-cli/commit/9815f80))
+
+
+
+## 0.6.0 (2020-06-02)
+
+* 0.6.0 ([153a9d7](https://github.com/posthtml/posthtml-cli/commit/153a9d7))
+* build: update changelog ([bc8f8ce](https://github.com/posthtml/posthtml-cli/commit/bc8f8ce))
+* build: update dep dev ([dc9f63c](https://github.com/posthtml/posthtml-cli/commit/dc9f63c))
+* ci: add nyc config ([3c23315](https://github.com/posthtml/posthtml-cli/commit/3c23315))
+* ci: enable package lock ([52b5eda](https://github.com/posthtml/posthtml-cli/commit/52b5eda))
+* ci: migrate to github action, close #299 ([fe8e6c3](https://github.com/posthtml/posthtml-cli/commit/fe8e6c3)), closes [#299](https://github.com/posthtml/posthtml-cli/issues/299)
+* ci: off use travis ([13b31e3](https://github.com/posthtml/posthtml-cli/commit/13b31e3))
+* docs: readme.md space adjustment ([13af1fc](https://github.com/posthtml/posthtml-cli/commit/13af1fc))
+* docs: update github badges ([f0c75ef](https://github.com/posthtml/posthtml-cli/commit/f0c75ef))
+* style: after update dep dev ([ec75743](https://github.com/posthtml/posthtml-cli/commit/ec75743))
+* test: add tests for allInOutput and root options ([362a00b](https://github.com/posthtml/posthtml-cli/commit/362a00b))
+* test: added timeout option to test script ([279ad8b](https://github.com/posthtml/posthtml-cli/commit/279ad8b))
+* test: rename base to root ([cbe615e](https://github.com/posthtml/posthtml-cli/commit/cbe615e))
+* test: test modified to argument changes ([785d64c](https://github.com/posthtml/posthtml-cli/commit/785d64c))
+* refactor: code refactor ([59cdbf1](https://github.com/posthtml/posthtml-cli/commit/59cdbf1))
+* feat: add allInOutput option ([2bdc8be](https://github.com/posthtml/posthtml-cli/commit/2bdc8be)), closes [/github.com/posthtml/posthtml-cli/pull/298#pullrequestreview-420695022](https://github.com//github.com/posthtml/posthtml-cli/pull/298/issues/pullrequestreview-420695022)
+* feat: base option ([d334ebe](https://github.com/posthtml/posthtml-cli/commit/d334ebe))
+
+
+
+## <small>0.5.4 (2020-02-17)</small>
+
+* 0.5.4 ([7740663](https://github.com/posthtml/posthtml-cli/commit/7740663))
+* build: update changelog ([1eedf68](https://github.com/posthtml/posthtml-cli/commit/1eedf68))
+* build: update dep dev and move config to file ([fd39ed8](https://github.com/posthtml/posthtml-cli/commit/fd39ed8))
+* fix: require of plugin that exports ES module ([bf735d1](https://github.com/posthtml/posthtml-cli/commit/bf735d1))
+* fix: version pkg ([8a7b8c6](https://github.com/posthtml/posthtml-cli/commit/8a7b8c6))
+* chore: [BREAKING] drop node 8 ([7c6af90](https://github.com/posthtml/posthtml-cli/commit/7c6af90))
+* chore: appveyor changes ([84700dc](https://github.com/posthtml/posthtml-cli/commit/84700dc))
+* chore: refactore minor ([0161b58](https://github.com/posthtml/posthtml-cli/commit/0161b58))
+
+
+
+## <small>0.5.2 (2020-01-21)</small>
+
+* 0.5.2 ([9eac9f1](https://github.com/posthtml/posthtml-cli/commit/9eac9f1))
+* build: update changelog ([f2ee8ef](https://github.com/posthtml/posthtml-cli/commit/f2ee8ef))
+* build: update dep dev ([af63894](https://github.com/posthtml/posthtml-cli/commit/af63894))
+* fix: after update dep ([4ecb916](https://github.com/posthtml/posthtml-cli/commit/4ecb916))
+
+
+
 ## <small>0.5.1 (2019-06-28)</small>
 
-* ci: try fix in windows ([ad49a51](https://github.com/posthtml/posthtml-cli/commit/ad49a51))
+* 0.5.1 ([16fbf31](https://github.com/posthtml/posthtml-cli/commit/16fbf31))
 * build: add path in test script ([efa1950](https://github.com/posthtml/posthtml-cli/commit/efa1950))
+* build: update changelog ([603a125](https://github.com/posthtml/posthtml-cli/commit/603a125))
+* ci: try fix in windows ([ad49a51](https://github.com/posthtml/posthtml-cli/commit/ad49a51))
 * fix: if plugins is array ([f550f11](https://github.com/posthtml/posthtml-cli/commit/f550f11))
 * test: expected for plugins array ([df36e4f](https://github.com/posthtml/posthtml-cli/commit/df36e4f))
 * test: when plugins array ([1c1b3db](https://github.com/posthtml/posthtml-cli/commit/1c1b3db))
@@ -52,6 +242,7 @@
 * docs: drop support old node ([855f953](https://github.com/posthtml/posthtml-cli/commit/855f953))
 * test: fix party normalize ([37d5d42](https://github.com/posthtml/posthtml-cli/commit/37d5d42))
 * test: normalize path, close #279 ([70c0936](https://github.com/posthtml/posthtml-cli/commit/70c0936)), closes [#279](https://github.com/posthtml/posthtml-cli/issues/279)
+* fix: clarify external config format ([c673d18](https://github.com/posthtml/posthtml-cli/commit/c673d18))
 
 
 
@@ -77,7 +268,6 @@
 * build: update changelog ([7e497a9](https://github.com/posthtml/posthtml-cli/commit/7e497a9))
 * build: update depDev ([6e12b94](https://github.com/posthtml/posthtml-cli/commit/6e12b94))
 * ci: bump to node 10 ([ffeb119](https://github.com/posthtml/posthtml-cli/commit/ffeb119))
-* fix: clarify external config format ([c673d18](https://github.com/posthtml/posthtml-cli/commit/c673d18))
 
 
 
@@ -379,11 +569,14 @@
 
 ## <small>0.2.6 (2016-09-08)</small>
 
+* 0.2.5 ([06cd83c](https://github.com/posthtml/posthtml-cli/commit/06cd83c))
 * 0.2.6 ([780c653](https://github.com/posthtml/posthtml-cli/commit/780c653))
 * docs(readme): fix patch to license ([fa37204](https://github.com/posthtml/posthtml-cli/commit/fa37204))
 * docs(readme): remove semi-colons ([9f86f2b](https://github.com/posthtml/posthtml-cli/commit/9f86f2b))
 * chore(changelog): Update changelog ([a0afcb8](https://github.com/posthtml/posthtml-cli/commit/a0afcb8))
 * chore(changelog): Update changelog ([b5a6160](https://github.com/posthtml/posthtml-cli/commit/b5a6160))
+* chore(package): add auto node publish ([6096ac9](https://github.com/posthtml/posthtml-cli/commit/6096ac9))
+* chore(package): add testen for test support list node ([b044e81](https://github.com/posthtml/posthtml-cli/commit/b044e81))
 * chore(package): update ava to version 0.16.0 ([7b41df2](https://github.com/posthtml/posthtml-cli/commit/7b41df2))
 * chore(package): update clinton to version 0.8.0 ([174f1f1](https://github.com/posthtml/posthtml-cli/commit/174f1f1))
 * chore(package): update eslint-formatter-pretty to version 0.3.0 ([530070f](https://github.com/posthtml/posthtml-cli/commit/530070f))
@@ -404,16 +597,10 @@
 * style(*): fix clinton report recommendation ([c62395e](https://github.com/posthtml/posthtml-cli/commit/c62395e))
 * style(package): bump version v0.2.5 ([aa01917](https://github.com/posthtml/posthtml-cli/commit/aa01917))
 * style(package): update author info ([eb8383f](https://github.com/posthtml/posthtml-cli/commit/eb8383f))
-* 0.2.5 ([06cd83c](https://github.com/posthtml/posthtml-cli/commit/06cd83c))
-* Create MAINTAINERS ([d87f6dd](https://github.com/posthtml/posthtml-cli/commit/d87f6dd))
-* return reverse to only node 6 ([a12431f](https://github.com/posthtml/posthtml-cli/commit/a12431f))
-* Update MAINTAINERS ([c2a2908](https://github.com/posthtml/posthtml-cli/commit/c2a2908))
-* chore(package): add auto node publish ([6096ac9](https://github.com/posthtml/posthtml-cli/commit/6096ac9))
 * chore(package): add auto node publish ([0ca5d7f](https://github.com/posthtml/posthtml-cli/commit/0ca5d7f))
 * chore(package): add changelog-cli generator ([ee55422](https://github.com/posthtml/posthtml-cli/commit/ee55422))
 * chore(package): add clinton ([3631eb8](https://github.com/posthtml/posthtml-cli/commit/3631eb8))
 * chore(package): add conventional changelog linter ([2fedad3](https://github.com/posthtml/posthtml-cli/commit/2fedad3))
-* chore(package): add testen for test support list node ([b044e81](https://github.com/posthtml/posthtml-cli/commit/b044e81))
 * chore(package): add testen for testin support node version ([16f98d6](https://github.com/posthtml/posthtml-cli/commit/16f98d6))
 * chore(package): change engines node support version ([5640c93](https://github.com/posthtml/posthtml-cli/commit/5640c93))
 * chore(package): change xo to eslint ([dbc509e](https://github.com/posthtml/posthtml-cli/commit/dbc509e))
@@ -424,6 +611,11 @@
 * docs(readme): add icon node support ([a70ac5d](https://github.com/posthtml/posthtml-cli/commit/a70ac5d))
 * docs(readme): add testen icons ([44c8c57](https://github.com/posthtml/posthtml-cli/commit/44c8c57))
 * docs(readme): fix linter error ([d176533](https://github.com/posthtml/posthtml-cli/commit/d176533))
+* Create MAINTAINERS ([d87f6dd](https://github.com/posthtml/posthtml-cli/commit/d87f6dd))
+* Fixed linter report error ([e6e0c16](https://github.com/posthtml/posthtml-cli/commit/e6e0c16))
+* return reverse to only node 6 ([a12431f](https://github.com/posthtml/posthtml-cli/commit/a12431f))
+* Update devDep ([dab5cc5](https://github.com/posthtml/posthtml-cli/commit/dab5cc5))
+* Update MAINTAINERS ([c2a2908](https://github.com/posthtml/posthtml-cli/commit/c2a2908))
 
 
 
@@ -431,9 +623,7 @@
 
 * bump ([89e5c62](https://github.com/posthtml/posthtml-cli/commit/89e5c62))
 * Fixed #94, try to return support old node ([203d3d7](https://github.com/posthtml/posthtml-cli/commit/203d3d7)), closes [#94](https://github.com/posthtml/posthtml-cli/issues/94)
-* Fixed linter report error ([e6e0c16](https://github.com/posthtml/posthtml-cli/commit/e6e0c16))
 * not support less node 6 ([09b1776](https://github.com/posthtml/posthtml-cli/commit/09b1776))
-* Update devDep ([dab5cc5](https://github.com/posthtml/posthtml-cli/commit/dab5cc5))
 * Update package.json ([ff9af7d](https://github.com/posthtml/posthtml-cli/commit/ff9af7d))
 * Update package.json ([345ce01](https://github.com/posthtml/posthtml-cli/commit/345ce01))
 * Update README.md ([6bcc5b0](https://github.com/posthtml/posthtml-cli/commit/6bcc5b0))

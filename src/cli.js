@@ -5,19 +5,25 @@ import fs from 'fs';
 import fg from 'fast-glob';
 import meow from 'meow';
 import makeDir from 'make-dir';
+import updateNotifier from 'update-notifier';
 import posthtml from 'posthtml';
 import outResolve from './out-resolve';
 import cfgResolve from './cfg-resolve';
+
+const package_ = require('../package.json');
+updateNotifier({pkg: package_}).notify();
 
 const cli = meow(`
   Usage: posthtml <patterns>
 
   Options:
-    --output -o    Output File or Folder
-    --config -c    Path to config file
-    --use -u       PostHTML plugin name
-    --help -h      CLI Help
-    --version -v   CLI Version
+    --output -o      Output File or Folder
+    --config -c      Path to config file
+    --use -u         PostHTML plugin name
+    --root -r        Mirror the directory structure relative to this path in the output directory(default: .)
+    --allInOutput -a Save the nesting structure for output
+    --help -h        CLI Help
+    --version -v     CLI Version
 
   Examples:
     $ posthtml input.html
@@ -26,7 +32,8 @@ const cli = meow(`
     $ posthtml input.html -o output.html -c posthtml.js
     $ posthtml input.html -o output.html -u posthtml-bem --posthtml-bem.elemPrefix __
     $ posthtml inputFolder/*.html -o outputFolder
-    $ posthtml inputFolder/**/*.html -o outputFolder
+    $ posthtml inputFolder/**/*.html -o outputFolder -a
+    $ posthtml inputFolder/**/*.html -o outputFolder -a -r inputFolder
 `, {
   flags: {
     config: {
@@ -46,32 +53,62 @@ const cli = meow(`
       alias: 'o'
     },
     use: {
-      type: 'Array',
-      alias: 'u'
+      type: 'string',
+      alias: 'u',
+      isMultiple: true
+    },
+    // https://github.com/sindresorhus/meow/issues/158
+    // options: {
+    //   type: 'string',
+    //   isMultiple: true
+    // },
+    root: {
+      type: 'string',
+      alias: 'r',
+      default: './'
+    },
+    allInOutput: {
+      type: 'boolean',
+      default: false,
+      alias: 'a'
+    },
+    skip: {
+      type: 'string',
+      alias: 's',
+      isMultiple: true
     }
   }
 });
 
-const read = file => new Promise(resolve => fs.readFile(file, 'utf8', (error, data) => {
-  if (error) {
-    console.warn(error);
-  }
+const read = file => new Promise(resolve => {
+  fs.readFile(file, 'utf8', (error, data) => {
+    if (error) {
+      console.warn(error);
+    }
 
-  resolve(data);
-}));
+    resolve(data);
+  });
+});
+
+const interopRequire = object => object && object.__esModule ? object.default : object;
 
 const getPlugins = config => Object.keys(config.plugins || {})
-  .map(plugin => require(plugin)(config.plugins[plugin]));
+  .map(plugin => interopRequire(require(plugin))(config.plugins[plugin]));
 
 const config = cfgResolve(cli);
 
 const processing = async file => {
-  const output = await outResolve(file, config.output);
+  const output = await outResolve(file, config);
   const plugins = Array.isArray(config.plugins) ? config.plugins : getPlugins(config);
+  const skipParse = config.skip.includes(file);
 
   makeDir(path.dirname(output))
-    .then(read.bind(null, file))
-    .then(html => posthtml(plugins).process(html))
+    .then(read.bind(undefined, file))
+    .then(html => Promise.resolve(posthtml(plugins).process(html, {
+      ...config.options,
+      skipParse,
+      from: file
+    })))
     .then(({html}) => {
       fs.writeFile(output, html, error => {
         if (error) {
